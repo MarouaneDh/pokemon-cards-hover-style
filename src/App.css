@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    object-fit: cover;
+    flex-wrap:wrap ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(212, 212, 212, 0.212);
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    border-top:1.5px solid rgba(218, 218, 218, 0.658);
+    border-right:1.5px solid rgba(218, 218, 218, 0.658);
+    border-bottom:1px solid rgba(218, 218, 218, 0.363);
+    border-left:1px solid rgba(218, 218, 218, 0.288);
+    backdrop-filter: blur(8px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bgFire{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 115, 0, 0.288);
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.bgGrass{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(36, 99, 24, 0.288);
+    border-radius: 10px;
+}
+.bgWater{
+    position: relative;
+    width: 220px;
+    height: 200px;
+    background-color:rgb(37, 126, 153, 0.288);
+    border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokemon{
+    position: absolute;
+}
+
+/* .pokemon:hover{
+    width: 370px;
+    height: 440px;
+    position: absolute;
+    top: -180px;
+    left:-70px;
+    rotate: 90deg;
+    transition: 0.5s;
+} */
+
+.name{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.types{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.type{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.type img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px ;
+}
+
+.type span{
+    margin-right: 5px;
 }
